@@ -33,3 +33,7 @@ main:
 	li $v0, 16
 	move $a0, $s0
 	syscall
+	
+exit:
+	li $v0, 10
+	syscall
