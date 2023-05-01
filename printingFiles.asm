@@ -19,8 +19,8 @@ main:
 	#read from the file
 	li $v0, 14
 	move $a0, $s0
-	la $a1, aBuffer
-	li $a2, 300
+	la $a1, aBuffer  #buffer for input from the opened file
+	li $a2, 300      #max amount of characters the buffer can take
 	syscall
 	move $s2, $v0
 		
